@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HBRootViewController" customModule="have_or_buy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpt-xQ-BvM">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <connections>
+                                    <segue destination="ufE-2B-bld" kind="embed" id="8Jh-V9-swR"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fpt-xQ-BvM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Adm-Gb-ahd"/>
+                            <constraint firstAttribute="trailing" secondItem="Fpt-xQ-BvM" secondAttribute="trailing" id="ZIA-YD-PFM"/>
+                            <constraint firstItem="Fpt-xQ-BvM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dd9-iv-iN0"/>
+                            <constraint firstAttribute="bottom" secondItem="Fpt-xQ-BvM" secondAttribute="bottom" id="ggG-V6-Q5n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="Fpt-xQ-BvM" id="UbU-Sa-qEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="312"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="1vd-h4-rTO">
+            <objects>
+                <viewController id="ufE-2B-bld" userLabel="Main View Controller" customClass="HBMainViewController" customModule="have_or_buy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rc4-fk-gtp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ab-kE-KtH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2hQ-ox-keh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZxB-Mc-Gg2" appends="YES" id="uDJ-mC-9Os"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5I-X0-s8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZxB-Mc-Gg2">
+                    <connections>
+                        <action selector="panRecognized:" destination="ufE-2B-bld" id="YDV-ap-Cwk"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="473" y="302"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="uHq-PY-kMd">
+            <objects>
+                <viewController storyboardIdentifier="list" id="rtq-RQ-RS2" customClass="HBListViewController" customModule="have_or_buy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TgS-pr-TKp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OKW-x6-Rlw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9aK-Ty-knl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMZ-uW-Jlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="948"/>
+        </scene>
+    </scenes>
+</document>
