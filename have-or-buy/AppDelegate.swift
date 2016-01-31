@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  have or buy
+//  have-or-buy
 //
 //  Created by Peter Vieira on 1/18/16.
 //  Copyright © 2016 rapierevite. All rights reserved.

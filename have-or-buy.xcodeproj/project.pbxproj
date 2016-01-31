@@ -14,10 +14,10 @@
 		CB5B60791C4D95DD007A8CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5B60771C4D95DD007A8CBB /* LaunchScreen.storyboard */; };
 		CB5B60811C4DA255007A8CBB /* HBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B60801C4DA255007A8CBB /* HBMainViewController.swift */; };
 		CB5B60831C4DA37F007A8CBB /* HBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */; };
+		CB6A24521C5806F7004857CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A24511C5806F7004857CD /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB5B606B1C4D95DD007A8CBB /* have or buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "have or buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5B606E1C4D95DD007A8CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5B60701C4D95DD007A8CBB /* HBRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBRootViewController.swift; sourceTree = "<group>"; };
 		CB5B60731C4D95DD007A8CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +26,8 @@
 		CB5B607A1C4D95DD007A8CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5B60801C4DA255007A8CBB /* HBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBMainViewController.swift; sourceTree = "<group>"; };
 		CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBListViewController.swift; sourceTree = "<group>"; };
+		CB6A24501C5803F5004857CD /* have-or-buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "have-or-buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6A24511C5806F7004857CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,20 +44,12 @@
 		CB5B60621C4D95DC007A8CBB = {
 			isa = PBXGroup;
 			children = (
-				CB5B606D1C4D95DD007A8CBB /* have or buy */,
-				CB5B606C1C4D95DD007A8CBB /* Products */,
+				CB5B606D1C4D95DD007A8CBB /* have-or-buy */,
+				CB6A24501C5803F5004857CD /* have-or-buy.app */,
 			);
 			sourceTree = "<group>";
 		};
-		CB5B606C1C4D95DD007A8CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB5B606B1C4D95DD007A8CBB /* have or buy.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CB5B606D1C4D95DD007A8CBB /* have or buy */ = {
+		CB5B606D1C4D95DD007A8CBB /* have-or-buy */ = {
 			isa = PBXGroup;
 			children = (
 				CB5B606E1C4D95DD007A8CBB /* AppDelegate.swift */,
@@ -66,16 +60,17 @@
 				CB5B607A1C4D95DD007A8CBB /* Info.plist */,
 				CB5B60801C4DA255007A8CBB /* HBMainViewController.swift */,
 				CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */,
+				CB6A24511C5806F7004857CD /* Utils.swift */,
 			);
-			path = "have or buy";
+			path = "have-or-buy";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB5B606A1C4D95DC007A8CBB /* have or buy */ = {
+		CB5B606A1C4D95DC007A8CBB /* have-or-buy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have or buy" */;
+			buildConfigurationList = CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have-or-buy" */;
 			buildPhases = (
 				CB5B60671C4D95DC007A8CBB /* Sources */,
 				CB5B60681C4D95DC007A8CBB /* Frameworks */,
@@ -85,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "have or buy";
-			productName = "have or buy";
-			productReference = CB5B606B1C4D95DD007A8CBB /* have or buy.app */;
+			name = "have-or-buy";
+			productName = "have-or-buy";
+			productReference = CB6A24501C5803F5004857CD /* have-or-buy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have or buy" */;
+			buildConfigurationList = CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have-or-buy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,11 +110,11 @@
 				Base,
 			);
 			mainGroup = CB5B60621C4D95DC007A8CBB;
-			productRefGroup = CB5B606C1C4D95DD007A8CBB /* Products */;
+			productRefGroup = CB5B60621C4D95DC007A8CBB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB5B606A1C4D95DC007A8CBB /* have or buy */,
+				CB5B606A1C4D95DC007A8CBB /* have-or-buy */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6A24521C5806F7004857CD /* Utils.swift in Sources */,
 				CB5B60811C4DA255007A8CBB /* HBMainViewController.swift in Sources */,
 				CB5B60711C4D95DD007A8CBB /* HBRootViewController.swift in Sources */,
 				CB5B60831C4DA37F007A8CBB /* HBListViewController.swift in Sources */,
@@ -258,7 +254,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "have or buy/Info.plist";
+				INFOPLIST_FILE = "have-or-buy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +268,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "have or buy/Info.plist";
+				INFOPLIST_FILE = "have-or-buy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have or buy" */ = {
+		CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have-or-buy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB5B607B1C4D95DD007A8CBB /* Debug */,
@@ -292,7 +288,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have or buy" */ = {
+		CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have-or-buy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB5B607E1C4D95DD007A8CBB /* Debug */,

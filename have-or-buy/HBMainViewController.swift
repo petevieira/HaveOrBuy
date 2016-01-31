@@ -1,6 +1,6 @@
 //
 //  HBMainViewController.swift
-//  have or buy
+//  have-or-buy
 //
 //  Created by Peter Vieira on 1/18/16.
 //  Copyright © 2016 rapierevite. All rights reserved.
@@ -11,9 +11,7 @@ import UIKit
 class HBMainViewController: UIViewController {
 
     weak var leftViewController: UIViewController!
-
     weak var rightViewController: UIViewController!
-
     var currentViewControllerIsLeft: Bool = false
 
     /**
@@ -28,9 +26,8 @@ class HBMainViewController: UIViewController {
         // right Shopping list view and start with the right
         // list with its coordinates shifted to the right by the
         // width of the main view
-        leftViewController = instantiateViewController()
-        rightViewController = instantiateViewController()
-        rightViewController.view.backgroundColor = UIColor.blueColor()
+        leftViewController = instantiateViewController(true)
+        rightViewController = instantiateViewController(false)
         rightViewController.view.frame.offsetInPlace(dx: view.bounds.width, dy: 0)
         currentViewControllerIsLeft = true
     }
@@ -39,12 +36,19 @@ class HBMainViewController: UIViewController {
      * \brief Creates a UIViewController and adds it as a subview
      * to the main view controller with the same bounds
      */
-    func instantiateViewController() -> UIViewController {
-        let vc = storyboard!.instantiateViewControllerWithIdentifier("list")
+    func instantiateViewController(left: Bool) -> UIViewController {
+        let vc = storyboard!.instantiateViewControllerWithIdentifier("list") as! HBListViewController
         addChildViewController(vc)
         vc.view.frame = view.bounds
         view.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
+        
+        if left {
+            vc.view.backgroundColor = UIColor.greenColor()
+        } else {
+            vc.view.backgroundColor = UIColor.redColor()
+        }
+        
         return vc
     }
 
