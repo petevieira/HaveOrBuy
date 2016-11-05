@@ -26,7 +26,7 @@
 		CB5B607A1C4D95DD007A8CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5B60801C4DA255007A8CBB /* HBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBMainViewController.swift; sourceTree = "<group>"; };
 		CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBListViewController.swift; sourceTree = "<group>"; };
-		CB6A24501C5803F5004857CD /* have-or-buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "have-or-buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6A24501C5803F5004857CD /* HaveOrBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveOrBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6A24511C5806F7004857CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5B606D1C4D95DD007A8CBB /* have-or-buy */,
-				CB6A24501C5803F5004857CD /* have-or-buy.app */,
+				CB6A24501C5803F5004857CD /* HaveOrBuy.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB5B606A1C4D95DC007A8CBB /* have-or-buy */ = {
+		CB5B606A1C4D95DC007A8CBB /* HaveOrBuy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have-or-buy" */;
+			buildConfigurationList = CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "HaveOrBuy" */;
 			buildPhases = (
 				CB5B60671C4D95DC007A8CBB /* Sources */,
 				CB5B60681C4D95DC007A8CBB /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "have-or-buy";
+			name = HaveOrBuy;
 			productName = "have-or-buy";
-			productReference = CB6A24501C5803F5004857CD /* have-or-buy.app */;
+			productReference = CB6A24501C5803F5004857CD /* HaveOrBuy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -92,16 +92,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = rapierevite;
 				TargetAttributes = {
 					CB5B606A1C4D95DC007A8CBB = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 5VMK72V35A;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
-			buildConfigurationList = CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have-or-buy" */;
+			buildConfigurationList = CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "HaveOrBuy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB5B606A1C4D95DC007A8CBB /* have-or-buy */,
+				CB5B606A1C4D95DC007A8CBB /* HaveOrBuy */,
 			);
 		};
 /* End PBXProject section */
@@ -180,8 +181,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -224,8 +227,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -244,6 +249,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -259,6 +265,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -273,13 +280,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "have-or-buy" */ = {
+		CB5B60661C4D95DC007A8CBB /* Build configuration list for PBXProject "HaveOrBuy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB5B607B1C4D95DD007A8CBB /* Debug */,
@@ -288,7 +296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "have-or-buy" */ = {
+		CB5B607D1C4D95DD007A8CBB /* Build configuration list for PBXNativeTarget "HaveOrBuy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB5B607E1C4D95DD007A8CBB /* Debug */,

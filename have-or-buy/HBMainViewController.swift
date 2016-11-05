@@ -22,13 +22,11 @@ class HBMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // create left On-Hand list view and
-        // right Shopping list view and start with the right
-        // list with its coordinates shifted to the right by the
-        // width of the main view
+        // create left On-Hand list view and right Shopping list view and start with the right
+        // list with its coordinates shifted to the right by the width of the main view
         leftViewController = instantiateViewController(true)
         rightViewController = instantiateViewController(false)
-        rightViewController.view.frame.offsetInPlace(dx: view.bounds.width, dy: 0)
+        rightViewController.view.frame.offsetBy(dx: view.bounds.width, dy: 0)
         currentViewControllerIsLeft = true
     }
 
@@ -36,17 +34,17 @@ class HBMainViewController: UIViewController {
      * \brief Creates a UIViewController and adds it as a subview
      * to the main view controller with the same bounds
      */
-    func instantiateViewController(left: Bool) -> UIViewController {
-        let vc = storyboard!.instantiateViewControllerWithIdentifier("list") as! HBListViewController
+    func instantiateViewController(_ left: Bool) -> UIViewController {
+        let vc = storyboard!.instantiateViewController(withIdentifier: "list") as! HBListViewController
         addChildViewController(vc)
         vc.view.frame = view.bounds
         view.addSubview(vc.view)
-        vc.didMoveToParentViewController(self)
+        vc.didMove(toParentViewController: self)
         
         if left {
-            vc.view.backgroundColor = UIColor.greenColor()
+            vc.view.backgroundColor = UIColor.purple
         } else {
-            vc.view.backgroundColor = UIColor.redColor()
+            vc.view.backgroundColor = UIColor.red
         }
         
         return vc
@@ -56,17 +54,17 @@ class HBMainViewController: UIViewController {
      * \brief Gets called by the Pan Gesture Recognizer in the UI
      */
     @IBAction
-    func panRecognized(sender: UIPanGestureRecognizer) {
+    func panRecognized(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
-        case .Began:
+        case .began:
             break
-        case .Changed:
+        case .changed:
             // pan both list views in pan gesture direction
-            panViews(sender.translationInView(self.view).x)
-        case .Ended:
+            panViews(sender.translation(in: self.view).x)
+        case .ended:
             // change to view more on the screen
-            UIView.animateWithDuration(0.2, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
-                let tx = sender.translationInView(self.view).x
+            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+                let tx = sender.translation(in: self.view).x
                 if((self.currentViewControllerIsLeft && tx < 0 || !self.currentViewControllerIsLeft && tx > 0)
                     && fabs(tx) > (self.view.frame.width / 5)) {
                     self.switchView()
@@ -77,7 +75,7 @@ class HBMainViewController: UIViewController {
             })
         default:
             // pan both list views in pan gesture direction
-            panViews(sender.translationInView(self.view).x)
+            panViews(sender.translation(in: self.view).x)
             break;
         }
     }
@@ -86,10 +84,10 @@ class HBMainViewController: UIViewController {
      * \brief Translate both views by tx
      * \param tx Pan gesture distance in x direction. Right is positive.
      */
-    func panViews(tx: CGFloat) {
+    func panViews(_ tx: CGFloat) {
         if((currentViewControllerIsLeft && tx < 0) || !currentViewControllerIsLeft && tx > 0) {
-            leftViewController.view.transform = CGAffineTransformMakeTranslation(tx, 0)
-            rightViewController.view.transform = CGAffineTransformMakeTranslation(tx, 0)
+            leftViewController.view.transform = CGAffineTransform(translationX: tx, y: 0)
+            rightViewController.view.transform = CGAffineTransform(translationX: tx, y: 0)
         }
     }
 
@@ -97,16 +95,16 @@ class HBMainViewController: UIViewController {
      * \brief Restores to the view originally on the screen
      */
     func restoreView() {
-        leftViewController.view.transform = CGAffineTransformIdentity
-        rightViewController.view.transform = CGAffineTransformIdentity
+        leftViewController.view.transform = CGAffineTransform.identity
+        rightViewController.view.transform = CGAffineTransform.identity
     }
 
     /**
      * \brief Switches the view to the off-screen list
      */
     func switchView() {
-        leftViewController.view.transform = CGAffineTransformIdentity
-        rightViewController.view.transform = CGAffineTransformIdentity
+        leftViewController.view.transform = CGAffineTransform.identity
+        rightViewController.view.transform = CGAffineTransform.identity
         if(currentViewControllerIsLeft) {
             leftViewController.view.frame.origin = CGPoint(x: -view.frame.width, y: 0)
             rightViewController.view.frame.origin = CGPoint(x: 0, y: 0)
