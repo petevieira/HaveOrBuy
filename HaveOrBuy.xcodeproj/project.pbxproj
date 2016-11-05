@@ -15,7 +15,28 @@
 		CB5B60811C4DA255007A8CBB /* HBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B60801C4DA255007A8CBB /* HBMainViewController.swift */; };
 		CB5B60831C4DA37F007A8CBB /* HBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */; };
 		CB6A24521C5806F7004857CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A24511C5806F7004857CD /* Utils.swift */; };
+		CB909A9E1DCE4CDB005621AF /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB909A9D1DCE4CDB005621AF /* ListItem.swift */; };
+		CB909AA61DCE4E44005621AF /* HaveOrBuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB909AA51DCE4E44005621AF /* HaveOrBuyUITests.swift */; };
+		CB909AB41DCE4E4F005621AF /* HaveOrBuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB909AB31DCE4E4F005621AF /* HaveOrBuyTests.swift */; };
+		CB909ABB1DCE51AB005621AF /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB909A9D1DCE4CDB005621AF /* ListItem.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB909AA81DCE4E44005621AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB5B60631C4D95DC007A8CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5B606A1C4D95DC007A8CBB;
+			remoteInfo = HaveOrBuy;
+		};
+		CB909AB61DCE4E4F005621AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB5B60631C4D95DC007A8CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5B606A1C4D95DC007A8CBB;
+			remoteInfo = HaveOrBuy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB5B606E1C4D95DD007A8CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +49,31 @@
 		CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBListViewController.swift; sourceTree = "<group>"; };
 		CB6A24501C5803F5004857CD /* HaveOrBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveOrBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6A24511C5806F7004857CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CB909A9D1DCE4CDB005621AF /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		CB909AA31DCE4E44005621AF /* HaveOrBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HaveOrBuyUITests.xctest; path = "/Users/pevieira/myRepos/have-or-buy/build/Debug-iphoneos/HaveOrBuyUITests.xctest"; sourceTree = "<absolute>"; };
+		CB909AA51DCE4E44005621AF /* HaveOrBuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveOrBuyUITests.swift; sourceTree = "<group>"; };
+		CB909AA71DCE4E44005621AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB909AB11DCE4E4F005621AF /* HaveOrBuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HaveOrBuyTests.xctest; path = "/Users/pevieira/myRepos/have-or-buy/build/Debug-iphoneos/HaveOrBuyTests.xctest"; sourceTree = "<absolute>"; };
+		CB909AB31DCE4E4F005621AF /* HaveOrBuyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveOrBuyTests.swift; sourceTree = "<group>"; };
+		CB909AB51DCE4E4F005621AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB5B60681C4D95DC007A8CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB909AA01DCE4E44005621AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB909AAE1DCE4E4F005621AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,14 +86,17 @@
 		CB5B60621C4D95DC007A8CBB = {
 			isa = PBXGroup;
 			children = (
-				CB5B606D1C4D95DD007A8CBB /* have-or-buy */,
+				CB5B606D1C4D95DD007A8CBB /* HaveOrBuy */,
 				CB6A24501C5803F5004857CD /* HaveOrBuy.app */,
+				CB909AB21DCE4E4F005621AF /* HaveOrBuyTests */,
+				CB909AA41DCE4E44005621AF /* HaveOrBuyUITests */,
 			);
 			sourceTree = "<group>";
 		};
-		CB5B606D1C4D95DD007A8CBB /* have-or-buy */ = {
+		CB5B606D1C4D95DD007A8CBB /* HaveOrBuy */ = {
 			isa = PBXGroup;
 			children = (
+				CB909A9D1DCE4CDB005621AF /* ListItem.swift */,
 				CB5B606E1C4D95DD007A8CBB /* AppDelegate.swift */,
 				CB5B60701C4D95DD007A8CBB /* HBRootViewController.swift */,
 				CB5B60721C4D95DD007A8CBB /* Main.storyboard */,
@@ -62,7 +107,26 @@
 				CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */,
 				CB6A24511C5806F7004857CD /* Utils.swift */,
 			);
+			name = HaveOrBuy;
 			path = "have-or-buy";
+			sourceTree = "<group>";
+		};
+		CB909AA41DCE4E44005621AF /* HaveOrBuyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB909AA51DCE4E44005621AF /* HaveOrBuyUITests.swift */,
+				CB909AA71DCE4E44005621AF /* Info.plist */,
+			);
+			path = HaveOrBuyUITests;
+			sourceTree = "<group>";
+		};
+		CB909AB21DCE4E4F005621AF /* HaveOrBuyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB909AB31DCE4E4F005621AF /* HaveOrBuyTests.swift */,
+				CB909AB51DCE4E4F005621AF /* Info.plist */,
+			);
+			path = HaveOrBuyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,13 +149,49 @@
 			productReference = CB6A24501C5803F5004857CD /* HaveOrBuy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CB909AA21DCE4E44005621AF /* HaveOrBuyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB909AAA1DCE4E44005621AF /* Build configuration list for PBXNativeTarget "HaveOrBuyUITests" */;
+			buildPhases = (
+				CB909A9F1DCE4E44005621AF /* Sources */,
+				CB909AA01DCE4E44005621AF /* Frameworks */,
+				CB909AA11DCE4E44005621AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB909AA91DCE4E44005621AF /* PBXTargetDependency */,
+			);
+			name = HaveOrBuyUITests;
+			productName = HaveOrBuyUITests;
+			productReference = CB909AA31DCE4E44005621AF /* HaveOrBuyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CB909AB01DCE4E4F005621AF /* HaveOrBuyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB909AB81DCE4E4F005621AF /* Build configuration list for PBXNativeTarget "HaveOrBuyTests" */;
+			buildPhases = (
+				CB909AAD1DCE4E4F005621AF /* Sources */,
+				CB909AAE1DCE4E4F005621AF /* Frameworks */,
+				CB909AAF1DCE4E4F005621AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB909AB71DCE4E4F005621AF /* PBXTargetDependency */,
+			);
+			name = HaveOrBuyTests;
+			productName = HaveOrBuyTests;
+			productReference = CB909AB11DCE4E4F005621AF /* HaveOrBuyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CB5B60631C4D95DC007A8CBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = rapierevite;
 				TargetAttributes = {
@@ -99,6 +199,18 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 5VMK72V35A;
 						LastSwiftMigration = 0800;
+					};
+					CB909AA21DCE4E44005621AF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5VMK72V35A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB5B606A1C4D95DC007A8CBB;
+					};
+					CB909AB01DCE4E4F005621AF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5VMK72V35A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB5B606A1C4D95DC007A8CBB;
 					};
 				};
 			};
@@ -116,6 +228,8 @@
 			projectRoot = "";
 			targets = (
 				CB5B606A1C4D95DC007A8CBB /* HaveOrBuy */,
+				CB909AB01DCE4E4F005621AF /* HaveOrBuyTests */,
+				CB909AA21DCE4E44005621AF /* HaveOrBuyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +245,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB909AA11DCE4E44005621AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB909AAF1DCE4E4F005621AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB909A9E1DCE4CDB005621AF /* ListItem.swift in Sources */,
 				CB6A24521C5806F7004857CD /* Utils.swift in Sources */,
 				CB5B60811C4DA255007A8CBB /* HBMainViewController.swift in Sources */,
 				CB5B60711C4D95DD007A8CBB /* HBRootViewController.swift in Sources */,
@@ -146,7 +275,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB909A9F1DCE4E44005621AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB909AA61DCE4E44005621AF /* HaveOrBuyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB909AAD1DCE4E4F005621AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB909ABB1DCE51AB005621AF /* ListItem.swift in Sources */,
+				CB909AB41DCE4E4F005621AF /* HaveOrBuyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB909AA91DCE4E44005621AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5B606A1C4D95DC007A8CBB /* HaveOrBuy */;
+			targetProxy = CB909AA81DCE4E44005621AF /* PBXContainerItemProxy */;
+		};
+		CB909AB71DCE4E4F005621AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5B606A1C4D95DC007A8CBB /* HaveOrBuy */;
+			targetProxy = CB909AB61DCE4E4F005621AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB5B60721C4D95DD007A8CBB /* Main.storyboard */ = {
@@ -284,6 +443,78 @@
 			};
 			name = Release;
 		};
+		CB909AAB1DCE4E44005621AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VMK72V35A;
+				INFOPLIST_FILE = HaveOrBuyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HaveOrBuy;
+			};
+			name = Debug;
+		};
+		CB909AAC1DCE4E44005621AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VMK72V35A;
+				INFOPLIST_FILE = HaveOrBuyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HaveOrBuy;
+			};
+			name = Release;
+		};
+		CB909AB91DCE4E4F005621AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VMK72V35A;
+				INFOPLIST_FILE = HaveOrBuyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaveOrBuy.app/HaveOrBuy";
+			};
+			name = Debug;
+		};
+		CB909ABA1DCE4E4F005621AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VMK72V35A;
+				INFOPLIST_FILE = HaveOrBuyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaveOrBuy.app/HaveOrBuy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +535,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CB909AAA1DCE4E44005621AF /* Build configuration list for PBXNativeTarget "HaveOrBuyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB909AAB1DCE4E44005621AF /* Debug */,
+				CB909AAC1DCE4E44005621AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB909AB81DCE4E4F005621AF /* Build configuration list for PBXNativeTarget "HaveOrBuyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB909AB91DCE4E4F005621AF /* Debug */,
+				CB909ABA1DCE4E4F005621AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

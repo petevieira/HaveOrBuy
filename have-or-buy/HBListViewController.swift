@@ -12,7 +12,7 @@ class HBListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var listItems = [String]()
+    var listItems = [ListItem]()
     let textCellIdentifier = "TextCell"
 
     override func viewDidLoad() {
@@ -59,13 +59,13 @@ extension HBListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let row = (indexPath as NSIndexPath).row
-        print(listItems[row])
+        print(listItems[row].name)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         let row = (indexPath as NSIndexPath).row
-        cell.textLabel?.text = listItems[row]
+        cell.textLabel?.text = listItems[row].name
     }
     
 }
