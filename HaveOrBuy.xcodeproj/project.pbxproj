@@ -50,12 +50,12 @@
 		CB6A24501C5803F5004857CD /* HaveOrBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveOrBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6A24511C5806F7004857CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CB909A9D1DCE4CDB005621AF /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
-		CB909AA31DCE4E44005621AF /* HaveOrBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HaveOrBuyUITests.xctest; path = "/Users/pevieira/myRepos/have-or-buy/build/Debug-iphoneos/HaveOrBuyUITests.xctest"; sourceTree = "<absolute>"; };
 		CB909AA51DCE4E44005621AF /* HaveOrBuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveOrBuyUITests.swift; sourceTree = "<group>"; };
 		CB909AA71DCE4E44005621AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB909AB11DCE4E4F005621AF /* HaveOrBuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HaveOrBuyTests.xctest; path = "/Users/pevieira/myRepos/have-or-buy/build/Debug-iphoneos/HaveOrBuyTests.xctest"; sourceTree = "<absolute>"; };
 		CB909AB31DCE4E4F005621AF /* HaveOrBuyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveOrBuyTests.swift; sourceTree = "<group>"; };
 		CB909AB51DCE4E4F005621AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD550E01DCE576500028DB8 /* HaveOrBuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaveOrBuyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD550E11DCE576500028DB8 /* HaveOrBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaveOrBuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,8 @@
 				CB6A24501C5803F5004857CD /* HaveOrBuy.app */,
 				CB909AB21DCE4E4F005621AF /* HaveOrBuyTests */,
 				CB909AA41DCE4E44005621AF /* HaveOrBuyUITests */,
+				CBD550E01DCE576500028DB8 /* HaveOrBuyTests.xctest */,
+				CBD550E11DCE576500028DB8 /* HaveOrBuyUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +109,7 @@
 				CB5B60821C4DA37F007A8CBB /* HBListViewController.swift */,
 				CB6A24511C5806F7004857CD /* Utils.swift */,
 			);
-			name = HaveOrBuy;
-			path = "have-or-buy";
+			path = HaveOrBuy;
 			sourceTree = "<group>";
 		};
 		CB909AA41DCE4E44005621AF /* HaveOrBuyUITests */ = {
@@ -145,7 +146,7 @@
 			dependencies = (
 			);
 			name = HaveOrBuy;
-			productName = "have-or-buy";
+			productName = HaveOrBuy;
 			productReference = CB6A24501C5803F5004857CD /* HaveOrBuy.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -164,7 +165,7 @@
 			);
 			name = HaveOrBuyUITests;
 			productName = HaveOrBuyUITests;
-			productReference = CB909AA31DCE4E44005621AF /* HaveOrBuyUITests.xctest */;
+			productReference = CBD550E11DCE576500028DB8 /* HaveOrBuyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		CB909AB01DCE4E4F005621AF /* HaveOrBuyTests */ = {
@@ -182,7 +183,7 @@
 			);
 			name = HaveOrBuyTests;
 			productName = HaveOrBuyTests;
-			productReference = CB909AB11DCE4E4F005621AF /* HaveOrBuyTests.xctest */;
+			productReference = CBD550E01DCE576500028DB8 /* HaveOrBuyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -419,9 +420,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "have-or-buy/Info.plist";
+				INFOPLIST_FILE = HaveOrBuy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -434,9 +435,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "have-or-buy/Info.plist";
+				INFOPLIST_FILE = HaveOrBuy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rapierevite.have-or-buy";
+				PRODUCT_BUNDLE_IDENTIFIER = rapierevite.HaveOrBuy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -543,6 +544,7 @@
 				CB909AAC1DCE4E44005621AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB909AB81DCE4E4F005621AF /* Build configuration list for PBXNativeTarget "HaveOrBuyTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +553,7 @@
 				CB909ABA1DCE4E4F005621AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
